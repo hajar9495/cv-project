@@ -65,3 +65,23 @@ main {
 tr {
   line-height: 1.5;
 }
+
+#profil {
+  height: 300px;
+  /* background-color: cadetblue; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  padding-top: 10px;
+}
+#profil p {
+  text-align: justify;
+}
+#profil h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#profil .text {
+  padding-top: 10px;
+}

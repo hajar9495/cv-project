@@ -15,16 +15,17 @@ main {
   margin: 0 auto;
   background-color: #fff;
   width: 40%;
-  height: 150vh;
+  height: 130vh;
 }
 
 #content {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
 }
+
 .left {
   background-color: #f2f2f2;
-  min-height: 150vh;
+  min-height: 130vh;
   display: block;
   margin: 0;
 }
@@ -84,4 +85,21 @@ tr {
 
 #profil .text {
   padding-top: 10px;
+}
+
+#langages {
+  height: 300px;
+  /* background-color: cadetblue; */
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  padding-top: 10px;
+}
+#langages h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+#langages p {
+  text-transform: capitalize;
 }

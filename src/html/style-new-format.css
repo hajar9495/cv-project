@@ -1,0 +1,113 @@
+/* variables */
+:root {
+  --primary: #525659;
+  --secondary: purple;
+}
+/* reset */
+body,
+p,
+a,
+ul,
+li,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/* bases style */
+/* font */
+body {
+  /* background: var(--primary); */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #f3f3f3;
+  font-family: montserrat;
+}
+
+/* en dessous de 420px */
+@media screen and (max-width: 619px) {
+  body {
+    background-color: white;
+  }
+  #content {
+    display: block;
+    /* grid-template-columns: 1.5fr 2.5fr; */
+  }
+  #titre-lg {
+    display: none;
+    /* visibility: hidden; */
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    /* background: black;  */
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .active {
+    background-color: #fff;
+    color: black;
+  }
+  #photo {
+    margin: 0;
+  }
+}
+
+/* au desssus de 620px */
+/* small tablet style */
+@media screen and (min-width: 620px) {
+  nav {
+    /* visibility: hidden; */
+    display: none;
+  }
+  #titre-ms {
+    display: none;
+  }
+  #content {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+  }
+}
+/* large tablet laptop */
+@media screen and (min-width: 960px) {
+}
+
+/* large tablet & laptop */
+@media screen and (min-width: 1200px) {
+}
+
+/* html,
+body {
+  margin: 0;
+  background-color: aquamarine;
+}
+
+#profil {
+  background-color: aqua;
+} */

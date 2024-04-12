@@ -1,0 +1,21 @@
+/* en dessous de 600px */
+@media screen and (max-width: 600px) {
+  .responsive {
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    margin: 0 auto;
+    color: #fff;
+  }
+}
+
+/* en dessous de 900px mais plus grand que 601px */
+@media screen and (max-width: 900px) and (min-width: 601px) {
+  .responsive {
+    width: 80%;
+    height: 100px;
+    background-color: lightblue;
+    margin: 0 auto;
+    color: #fff;
+  }
+}

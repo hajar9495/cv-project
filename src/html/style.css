@@ -11,6 +11,7 @@ body {
 #content {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
+  
 }
 p {
   margin: 0;

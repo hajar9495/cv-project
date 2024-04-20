@@ -3,6 +3,31 @@
   --green: #0d6962;
   --gray: #f3f3f3;
 }
+
+.trait {
+  height: 10px;
+  width: 24vw;
+  background-color: rgb(193, 120, 120);
+  margin-right: 15px;
+  margin-top: 7px;
+}
+.div-titre {
+  display: flex;
+  justify-content: center;
+}
+.divider {
+  height: 5px;
+  width: 10vw;
+  background-color: var(--green);
+  margin: 15px 15px;
+}
+/* .dividerg {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+
+} */
+
 /* reset */
 body,
 p,
@@ -32,8 +57,13 @@ body {
   /* font: medium; */
   /* font-weight: normal; */
 }
+h2 {
+  font-weight: normal;
+  /* margin-top: -8px;
+  margin-left: 10px;
+  margin-right: 10px; */
+}
 h1,
-h2,
 h3 {
   font-weight: normal;
   text-align: center;
@@ -46,6 +76,7 @@ h1 {
 h2 {
   font-size: 28px;
   text-transform: capitalize;
+  text-align: center;
 }
 h3 {
   font-size: 18px;

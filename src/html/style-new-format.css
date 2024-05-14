@@ -4,6 +4,16 @@
   --green: #0d6962;
   --gray: #f3f3f3;
 }
+
+/* boutons  */
+.bouton {
+  background-color: #0d6962;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
 a:visited,
 a {
   text-decoration: none;
@@ -28,7 +38,7 @@ ul {
   margin-bottom: 0;
 }
 td {
-  padding: 0px 5px;
+  padding: 6px 5px;
 }
 .text-center {
   width: 85%;

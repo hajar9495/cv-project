@@ -7,7 +7,24 @@
       name="description"
       content="Voici une page web presentant mon cv : Mennai Hajar developpeuse web (php, js, html, css, reactNative reactJs, laravel...)"
     />
+    <!-- preload -->
+    <link rel="preload" href="style-new-format.css" as="style" />
+    <link rel="preload" href="script.js" as="script" />
+
+    <!-- css -->
     <link rel="stylesheet" href="style-new-format.css" />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      as="style"
+    />
+
+    <!-- <link rel="preconnect"> -->
+    <!-- <link rel="dns-prefetch"> -->
+    <!-- <link rel="preload" /> -->
+
+    <!-- fontawesome -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -15,14 +32,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    /> -->
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- titre de la page  -->
     <title>cv MENNAI Hajar</title>
   </head>
   <body>
@@ -36,7 +55,7 @@
           <li><a href="#projects">projets</a></li>
         </ul>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="afficherMenuBurger()">
         <i class="fa fa-bars"></i>
       </a>
     </nav>
@@ -195,6 +214,13 @@
         </div>
         <div id="experiences">
           <div class="div-titre">
+            <!-- <div>
+              <div class="divider-cote"></div>
+            </div>
+            <h2>Expériences</h2>
+            <div>
+              <div class="divider-cote"></div>
+            </div> -->
             <div class="divider"></div>
             <h2>Expériences</h2>
             <div class="divider"></div>
@@ -273,11 +299,11 @@
 
         <div id="projects">
           <div class="div-titre">
-            <div class="divider-p"></div>
+            <div class="divider"></div>
             <h2>Projets</h2>
-            <div class="divider-p"></div>
+            <div class="divider"></div>
           </div>
-          <div class="text-center">
+          <div class="text-center tab">
             <table class="table-entete">
               <tr class="tableau">
                 <td>Thèmes</td>
@@ -326,11 +352,141 @@
               </tr>
             </table>
           </div>
+          <!-- en format mobile -->
+          <div class="mobile">
+            <!-- premier projet -->
+            <div>
+              <table class="cent">
+                <tr class="tab-projet">
+                  <td class="w25">Theme</td>
+                  <td class="w75">Mairie</td>
+                </tr>
+                <tr class="ligne">
+                  <td>Stack</td>
+                  <td>Front</td>
+                </tr>
+                <tr class="ligne">
+                  <td>Techno</td>
+                  <td>React, Tailwindcss, Flowbite</td>
+                </tr>
+                <tr class="ligne">
+                  <td>Date</td>
+                  <td>Avril 2024</td>
+                </tr>
+
+                <tr class="last-ligne">
+                  <td colspan="2" class="centre-projet">
+                    <a
+                      href="https://mairie.mennai-hajar.fr/"
+                      class="lien-projet"
+                      >mairie.mennai-hajar.fr</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- 2eme projet -->
+            <div>
+              <table class="cent">
+                <tr class="tab-projet">
+                  <td class="w25">Theme</td>
+                  <td class="w75">Banque</td>
+                </tr>
+                <tr class="ligne">
+                  <td>Stack</td>
+                  <td>Front</td>
+                </tr>
+                <tr class="ligne">
+                  <td>Techno</td>
+                  <td>Html, Bootstrap, JS</td>
+                </tr>
+                <tr class="ligne">
+                  <td>Date</td>
+                  <td>Mars 2024</td>
+                </tr>
+
+                <tr class="last-ligne">
+                  <td colspan="2" class="centre-projet">
+                    <a
+                      href="https://banque.mennai-hajar.fr/"
+                      class="lien-projet"
+                      >banque.mennai-hajar.fr</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- 3eme projet -->
+            <div>
+              <table class="cent">
+                <tr class="tab-projet">
+                  <td class="w25">Theme</td>
+                  <td class="w75">E-commerce</td>
+                </tr>
+                <tr class="ligne">
+                  <td>Stack</td>
+                  <td>Front & Back</td>
+                </tr>
+                <tr class="ligne">
+                  <td>Techno</td>
+                  <td>
+                    <span class="imp"> Laravel </span>
+                    , Tailwindcss, Flowbite
+                  </td>
+                </tr>
+                <tr class="ligne">
+                  <td>Date</td>
+                  <td>Sept - Nov 2023</td>
+                </tr>
+
+                <tr class="last-ligne">
+                  <td colspan="2" class="centre-projet">
+                    <a
+                      href="https://nousscouture.mennai-hajar.fr/"
+                      class="lien-projet"
+                      >nousscouture.mennai-hajar.fr</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- 4eme projet -->
+            <div>
+              <table class="cent">
+                <tr class="tab-projet">
+                  <td class="w25">Theme</td>
+                  <td class="w75">Centre médicale</td>
+                </tr>
+                <tr class="ligne">
+                  <td>Stack</td>
+                  <td>Front</td>
+                </tr>
+                <tr class="ligne">
+                  <td>Techno</td>
+                  <td>Html,Tailwindcss, Flowbite</td>
+                </tr>
+                <tr class="ligne">
+                  <td>Date</td>
+                  <td>Aout 2023</td>
+                </tr>
+
+                <tr class="last-ligne">
+                  <td colspan="2" class="centre-projet">
+                    <a
+                      href="https://projet-aout.mennai-hajar.fr/"
+                      class="lien-projet"
+                      >projet-aout.mennai-hajar.fr</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <script>
+    <script defer src="script.js"></script>
+    <!-- <script defer>
       //burger menu action
       function myFunction() {
         var x = document.getElementById("myLinks");
@@ -340,6 +496,6 @@
           x.style.display = "block";
         }
       }
-    </script>
+    </script> -->
   </body>
 </html>

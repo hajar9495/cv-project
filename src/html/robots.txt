@@ -5,4 +5,4 @@ User-agent: *
 crawl-delay: 10
 
 User-agent: *
-Sitemap: https://www.mennai-hajar.fr/sitemap.xml
+Sitemap: https://mennai-hajar.fr/sitemap.xml

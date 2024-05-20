@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /mennai-hajar-portrait.webp
+
+User-agent: *
+crawl-delay: 10
+
+User-agent: *
+Sitemap: https://www.mennai-hajar.fr/sitemap.xml

@@ -1,3 +1,6 @@
+img {
+  pointer-events: none;
+}
 .bold,
 .sous-titre {
   font-weight: 500;

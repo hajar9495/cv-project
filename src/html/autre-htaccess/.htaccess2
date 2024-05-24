@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^$
+
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?mennai-hajar.fr/.\*$ [NC]
+
+RewriteCond %{HTTP_REFERER} !^https://(www\.)?mennai-hajar.fr/.\*$ [NC]
+
+RewriteRule \.(gif|jpg|jpeg|mp3|png|pdf|zip|webp)$ - [F,L]

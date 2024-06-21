@@ -1,11 +1,9 @@
 # Activez HTTPS
-
 RewriteEngine On
 RewriteCond %{Server_Port} !=443
 RewriteRule ^(.\*)$ https://mennai-hajar.fr/$1 [R=301,L]
 
 # ne pas indexer les fichiers racine
-
 Options -Indexes
 
 <IfModule mod_filter.c>

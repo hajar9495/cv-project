@@ -7,3 +7,4 @@ function afficherMenuBurger() {
     x.style.display = "block";
   }
 }
+
